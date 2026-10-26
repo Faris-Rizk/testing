@@ -1,0 +1,41 @@
+name: faris
+
+age: 30
+salary: 5000
+
+long message: |
+  This is a long message that spans multiple lines.
+  It can contain various details about the person, such as their hobbies,
+  interests, and other relevant information. The message can be formatted
+  in a way that makes it easy to read and understand.
+#this is a long message that spans multiple lines
+#it can contain various details about the person, such as their hobbies,
+#interests, and other relevant information. The message can be formatted
+#in a way that makes it easy to read and understand.
+folded message: >
+  hello
+  world
+  this is a folded message
+
+  this is a forced line break
+#hello world this is a folded message
+
+employee:
+  name: John Doe
+  age: 28
+  position: Software Engineer
+  department: IT
+
+employee_list:
+  - name: Alice Smith
+    age: 32
+    position: Project Manager
+    department: Operations
+  - name: Bob Johnson
+    age: 25
+    position: Data Analyst
+    department: Marketing
+
+    
+
+
