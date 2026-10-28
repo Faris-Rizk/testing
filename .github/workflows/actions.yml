@@ -1,0 +1,18 @@
+on: 
+  workflow_dispatch:
+
+jobs:
+  hybrid_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run a command in ubuntu vm
+        run: echo"this runs in ubuntu vm"
+
+      - name: run inside an alphin container
+        uses: docker://alpin:3.14 #the image must be publc
+        with:
+          entrypoint: /bin/sh
+          args: |
+            -c echo "this runs inside a container"
+      - name: run another commant inside ubuntu vm
+        run: echo"back to ubuntu vm"
