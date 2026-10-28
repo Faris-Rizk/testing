@@ -6,6 +6,6 @@ jobs:
     steps:
       - run: |
           deprecated=true
-          if [["$deprecated" == "true"]]; then
+          if [[ "$deprecated" == "true" ]]; then
             echo "::warning::deprecated message found"
           fi
