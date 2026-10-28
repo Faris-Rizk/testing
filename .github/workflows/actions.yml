@@ -9,7 +9,7 @@ jobs:
         run: echo"this runs in ubuntu vm"
 
       - name: run inside an alphin container
-        uses: docker://alpin:3.14 #the image must be publc
+        uses: docker://alpine:3.14 #the image must be publc
         with:
           entrypoint: /bin/sh
           args: |
